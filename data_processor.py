@@ -6,7 +6,7 @@ from data_analyzer import DataAnalyzer
 
 
 MIN_OBS      = 5
-MIN_DATA_LEN = 200
+MIN_DATA_LEN = 100
 MIN_DELTA    = 500
 NGRAMS_SIZE  = 2
 
@@ -64,7 +64,7 @@ class DataProcessor:
         df = pd.concat([count, means, var], axis=1)
 
         # Filter
-        df = self.df[self.df[0] >= MIN_OBS]
+        df = df[df['count'] >= MIN_OBS]
 
         # Normalize data
         # TODO
