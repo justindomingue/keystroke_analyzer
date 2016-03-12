@@ -3,8 +3,7 @@ import codecs
 import pandas as pd
 import json
 
-from data_analyzer import DataAnalyzer
-
+from analyzer.data_analyzer import DataAnalyzer
 
 MIN_OBS      = 5
 MIN_DATA_LEN = 200
