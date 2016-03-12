@@ -7,8 +7,8 @@ from os import path
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the README file
-with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
-    long_description = f.read()
+# with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
+#     long_description = f.read()
 
 setup(
     name='keystroke_analyzer',
@@ -16,7 +16,7 @@ setup(
     version='1.0.0',
 
     description='A suite of keystroke analyzers',
-    long_description=long_description,
+    # long_description=long_description,
 
     # The project's main homepage.
     url='https://github.com/justindomingue/keystroke_analyzer',
