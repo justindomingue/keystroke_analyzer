@@ -15,6 +15,9 @@ class DataProcessor:
         self.data = raw['data']
         self.id = raw['user']
 
+        self.preprocess()
+        self.process()
+
     def preprocess(self):
         ''' Preprocesses the data
 
@@ -115,9 +118,6 @@ class DataProcessor:
             for sample in samples:
                 if user == None or sample['user'] == user:
                     dp = DataProcessor(sample)
-                    dp.preprocess()
-                    dp.process()
-
                     ret.append(dp.observations)
 
         return ret
