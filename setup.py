@@ -13,7 +13,7 @@ here = path.abspath(path.dirname(__file__))
 setup(
     name='keystroke_analyzer',
 
-    version='1.0.0',
+    version='1.0.1',
 
     description='A suite of keystroke analyzers',
     # long_description=long_description,
